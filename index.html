@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-End Internship Task</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- gallery starts -->
+    <aside class="gallery__menu">
+      <ul class="gallery__menu-items"></ul>
+      <div class="gallery__pagination">
+        <button
+          class="gallery__pagination-arrow gallery__pagination-arrow--left"
+        ></button>
+        <button
+          class="gallery__pagination-arrow gallery__pagination-arrow--right"
+        ></button>
+      </div>
+    </aside>
+
+    <main class="gallery__content">
+      <figure class="gallery__picture">Please select an image.</figure>
+      <div class="gallery__info">
+        <div class="gallery__picture-details">
+          <h3 class="gallery__info-headline">Details</h3>
+          <p class="gallery__author">Author:</p>
+          <p class="gallery__dimensions">Dimensions:</p>
+        </div>
+        <div class="gallery__picture-controls">
+          <h3 class="gallery__info-headline">Filters</h3>
+          <div class="gallery__slider">
+            <label for="grayscale">Blur</label>
+            <input
+              class="gallery__slider-input"
+              id="grayscale"
+              type="range"
+              min="0"
+              max="10"
+              value="0"
+            />
+          </div>
+          <div class="gallery__switch">
+            <span>Grayscale</span>
+            <div class="gallery__switch-input">
+              <label for="blur">
+                <input id="blur" type="checkbox" />
+                <div></div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- gallery ends -->
+
+    <!-- scripts -->
+    <script src="./index.js"></script>
+  </body>
+</html>
